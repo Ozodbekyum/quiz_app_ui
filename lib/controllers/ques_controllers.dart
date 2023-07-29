@@ -44,10 +44,11 @@ class QuesController extends GetxController {
   }
 
   void nextQuestion() {
-    isAnswered = false;
-    pageControllesr.nextPage(
-        duration: Duration(milliseconds: 250), curve: Curves.ease);
-
-    Get.to(ScorePage());
+    if (questionNumber.value != questions.length) {
+      isAnswered = false;
+      pageControllesr.nextPage(
+          duration: Duration(milliseconds: 250), curve: Curves.ease);
+    } else
+      Get.to(ScorePage());
   }
 }

@@ -13,19 +13,19 @@ class ScorePage extends StatelessWidget {
       body: Stack(fit: StackFit.expand, children: [
         Column(
           children: [
-            Spacer(
+            const Spacer(
               flex: 3,
             ),
-            Text(
+            const Text(
               'Score',
               style: TextStyle(color: Colors.amber, fontSize: 40),
             ),
-            Spacer(),
+            const Spacer(),
             Text(
               '${qcontroller.correctAnswer * 10}/${qcontroller.questions.length * 10}',
-              style: TextStyle(color: Colors.black, fontSize: 30),
+              style: const TextStyle(color: Colors.black, fontSize: 30),
             ),
-            Spacer(
+            const Spacer(
               flex: 3,
             ),
             Container(
@@ -39,12 +39,12 @@ class ScorePage extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomePage(),
+                          builder: (context) => const HomePage(),
                         ));
                   },
-                  child: Text('go back')),
+                  child: const Text('go back')),
             ),
-            Spacer(
+            const Spacer(
               flex: 1,
             )
           ],

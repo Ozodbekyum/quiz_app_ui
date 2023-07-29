@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: [
                     CircleAvatar(
+                      backgroundImage: AssetImage('lib/img/raman.jpg'),
                       radius: 70,
                       backgroundColor: Colors.white,
                     ),
@@ -33,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                       height: 10,
                     ),
                     Text(
-                      'John Williams',
+                      'Raman Williams',
                       style: TextStyle(fontSize: 20, color: Colors.white),
                     ),
                   ],
