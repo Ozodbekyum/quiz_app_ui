@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 import 'math_body.dart';
 
 class MathPage extends StatefulWidget {
@@ -21,7 +22,9 @@ class _MathPageState extends State<MathPage> {
         backgroundColor: Colors.transparent,
         actions: [
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
               child: const Text(
                 'Skip',
                 style: TextStyle(color: Colors.purple),

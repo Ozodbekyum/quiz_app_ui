@@ -24,7 +24,8 @@ class CateListPage extends StatelessWidget {
           },
           child: const Categories(
             title: 'Math questions',
-            back: Colors.orange,
+            begin: Colors.orange,
+            end: Colors.pink,
             icon: Colors.white,
           ),
         ),
@@ -41,14 +42,15 @@ class CateListPage extends StatelessWidget {
           },
           child: const Categories(
             title: 'Logo questions',
-            back: Colors.green,
-            icon: Colors.purple,
+            begin: Colors.green,
+            end: Colors.yellow,
+            icon: Colors.white,
           ),
         ),
         const SizedBox(
           height: 20,
         ),
-        InkWell(
+        const InkWell(
           // onTap: () {
           //   Navigator.push(
           //       context,
@@ -56,16 +58,17 @@ class CateListPage extends StatelessWidget {
           //         builder: (context) => StartPage(),
           //       ));
           // },
-          child: const Categories(
+          child: Categories(
             title: 'Car questions',
-            back: Colors.blue,
-            icon: Colors.red,
+            begin: Colors.blue,
+            end: Colors.red,
+            icon: Colors.white,
           ),
         ),
         const SizedBox(
           height: 20,
         ),
-        InkWell(
+        const InkWell(
           // onTap: () {
           //   Navigator.push(
           //       context,
@@ -73,10 +76,11 @@ class CateListPage extends StatelessWidget {
           //         builder: (context) => StartPage(),
           //       ));
           // },
-          child: const Categories(
+          child: Categories(
             title: 'Other questions',
-            back: Colors.red,
-            icon: Colors.black,
+            begin: Colors.white,
+            end: Colors.black,
+            icon: Colors.white,
           ),
         ),
       ],
